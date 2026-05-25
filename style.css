@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+
+    height: 100vh;
+    background-color: black;
+
+}
+
+.container{
+
+    display: flex;
+    height: 100vh;
+
+}
+
+/* LEFT SIDE */
+
+.left-panel{
+
+    flex: 1;
+
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.7)
+    ),
+    url("cat.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.overlay{
+
+    text-align: center;
+    color: white;
+
+    padding: 30px;
+
+}
+
+.overlay h1{
+
+    font-size: 90px;
+
+    color: #ffcc00;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 10px;
+
+}
+
+.overlay h2{
+
+    font-size: 30px;
+
+    margin-bottom: 20px;
+
+}
+
+.overlay p{
+
+    font-size: 20px;
+
+    background-color: rgba(0,0,0,0.6);
+
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    border-radius: 10px;
+
+}
+
+/* RIGHT SIDE */
+
+.right-panel{
+
+    width: 420px;
+
+    background: #0d0d0d;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.form-box{
+
+    width: 80%;
+
+    color: white;
+
+}
+
+.form-box h1{
+
+    font-size: 45px;
+
+    margin-bottom: 10px;
+
+}
+
+.form-box p{
+
+   color: #999;
+
+    margin-bottom: 30px;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+.form-box h3{
+
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    color: #ffcc00;
+
+}
+
+input{
+
+    width: 100%;
+
+    padding: 15px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #333;
+
+    background: #1a1a1a;
+
+    color: white;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+    transition: 0.3s;
+
+}
+
+input:focus{
+
+    outline: none;
+
+    border: 1px solid #ffcc00;
+
+    box-shadow: 0 0 10px #ffcc00;
+
+}
+
+button{
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #ffcc00;
+
+    color: black;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+button:hover{
+
+    background: white;
+
+    transform: scale(1.03);
+
+}
+
+.register-btn{
+
+    background: transparent;
+
+    border: 2px solid #ffcc00;
+
+    color: #ffcc00;
+
+}
+
+.register-btn:hover{
+
+    background: #ffcc00;
+
+    color: black;
+
+}
+
+.divider{
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    height: 1px;
+
+    background: #333;
+
+}
+.switch-text{
+
+    margin-top: 20px;
+
+    text-align: center;
+
+    color: #999;
+
+}
+
+.switch-text span{
+
+    color: #ffcc00;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+}
+
+.switch-text span:hover{
+
+    text-decoration: underline;
+
+}

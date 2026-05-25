@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <!-- SIDEBAR -->
+
+        <div class="sidebar">
+
+            <div class="logo-section">
+
+                <img src="logo.jpg" alt="Logo">
+
+            </div>
+
+            <ul>
+
+                <li onclick="showDashboard()">🏠 Dashboard</li>
+
+                <li onclick="showEmployees()">👨‍💼 Employees</li>
+
+                <li onclick="showAddEmployee()">➕ Add Employee</li>
+
+                <li onclick="showSettings()">⚙ Settings</li>
+
+                <li onclick="showTrash()">🗑 Trash</li>
+
+            </ul>
+
+        </div>
+
+        <!-- MAIN CONTENT -->
+
+        <div class="main-content">
+
+            <!-- TOP BAR -->
+
+            <div class="top-bar">
+
+                <h2>Employee Dashboard</h2>
+
+                <button onclick="logout()">Logout</button>
+
+            </div>
+
+            <!-- DASHBOARD SECTION -->
+
+            <div id="dashboardSection">
+
+                <h2>Welcome Back 👋</h2>
+
+                <p class="dashboard-text">
+
+                    Manage your employees efficiently and keep the workflow smooth.
+
+                </p>
+
+            </div>
+
+            <!-- EMPLOYEE SECTION -->
+
+            <div class="employee-section" id="employeeSection" style="display: none;">
+
+                <h3>Employee List</h3>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>ID</th>
+
+                            <th>Name</th>
+
+                            <th>Email</th>
+
+                            <th>Department</th>
+
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="employeeTable">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+           <!-- ADD EMPLOYEE SECTION -->
+
+<div id="addEmployeeSection" style="display: none;">
+
+    <h3>Add Employee</h3>
+
+    <div class="add-form">
+
+        <input type="text" id="name" placeholder="Employee Name">
+
+        <input type="email" id="email" placeholder="Employee Email">
+
+        <input type="text" id="department" placeholder="Department">
+
+        <button type="button" onclick="addEmployee()">
+
+            Add Employee
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- UPDATE EMPLOYEE SECTION -->
+
+<div id="updateEmployeeSection" style="display: none;">
+
+    <h3>Update Employee</h3>
+
+    <div class="add-form">
+
+        <input type="hidden" id="updateId">
+
+        <input type="text" id="updateName" placeholder="Employee Name">
+
+        <input type="email" id="updateEmail" placeholder="Employee Email">
+
+        <input type="text" id="updateDepartment" placeholder="Department">
+
+        <button type="button" onclick="updateEmployee()">
+
+            Update Employee
+
+        </button>
+
+    </div>
+
+</div>
+            <!-- TRASH SECTION -->
+
+            <div id="trashSection" style="display: none;">
+
+                <h3>Deleted Employees</h3>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>ID</th>
+
+                            <th>Name</th>
+
+                            <th>Email</th>
+
+                            <th>Department</th>
+
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="trashTable">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>

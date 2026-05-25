@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chaos Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- LEFT SIDE -->
+
+        <div class="left-panel">
+
+            <div class="overlay">
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="right-panel">
+
+            <div class="form-box">
+
+                <div class="form-box">
+
+    <!-- LOGIN FORM -->
+
+    <div id="loginForm">
+
+        <h1>Welcome Back!</h1>
+
+        <p>Making employee management slightly less stressful.</p>
+
+        <input type="text" id="loginUsername" placeholder="Enter Username">
+
+        <input type="password" id="loginPassword" placeholder="Enter Password">
+
+        <button onclick="login()">Sign In</button>
+
+        <div class="switch-text">
+
+            Don't have an account?
+
+            <span onclick="showRegister()">Register</span>
+
+        </div>
+
+    </div>
+
+    <!-- REGISTER FORM -->
+
+    <div id="registerForm" style="display: none;">
+
+        <h1>Create Account</h1>
+
+        <p>Join the chaos community 😎🔥</p>
+
+        <input type="text" id="registerUsername" placeholder="Create Username">
+
+        <input type="password" id="registerPassword" placeholder="Create Password">
+
+        <button onclick="register()" class="register-btn">
+
+            Register
+
+        </button>
+
+        <div class="switch-text">
+
+            Already have an account?
+
+            <span onclick="showLogin()">Login</span>
+
+        </div>
+
+    </div>
+
+</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

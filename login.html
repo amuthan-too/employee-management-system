@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Employee Login</title>
+</head>
+
+<body>
+
+    <h1>Employee Management System</h1>
+
+    <h2>Login</h2>
+
+    <input type="text" id="username" placeholder="Enter Username">
+    <br><br>
+
+    <input type="password" id="password" placeholder="Enter Password">
+    <br><br>
+
+    <button onclick="login()">Login</button>
+
+    <script>
+
+        async function login() {
+
+            const userData = {
+
+                username: document.getElementById("username").value,
+
+                password: document.getElementById("password").value
+
+            };
+
+            const response = await fetch("http://localhost:8087/login", {
+
+                method: "POST",
+
+                headers: {
+                    "Content-Type": "application/json"
+                },
+
+                body: JSON.stringify(userData)
+
+            });
+
+            const result = await response.text();
+
+            alert(result);
+
+        }
+
+    </script>
+
+</body>
+
+</html>
